@@ -1,0 +1,52 @@
+:root {
+    --height-all-courses-container: 10px;
+  }
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.all-courses-container,
+.selected-courses-container{
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
+    border: 2px solid black;
+    overflow: auto;
+}
+ul{
+    padding: 0px;
+}
+
+ul li {
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    list-style: none;
+  }
+ 
+ul li:nth-child(2n) {
+    background-color: rgb(79, 53, 228);
+}
+ul {
+height: calc(100% - var(--height-all-courses-container) * 2);
+}
+.selectedLi{
+    background-color: blue;
+}
+
+.btn-c{
+    display: flex;
+    justify-content: space-around;
+}
